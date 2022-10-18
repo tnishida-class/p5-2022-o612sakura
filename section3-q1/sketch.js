@@ -14,5 +14,5 @@ function draw(){
    count=(count+0.5)%cycle
   let size=count
   ellipse(width / 2, height / 2, size);
- if(mouseIsPressed){count=(count+1)%cycle}
+ if(keyIsDown(UP_ARROW)){count=(count+1)%cycle}
 }
