@@ -10,8 +10,9 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  count=(count+1)%cycle
-  if(count<80){count=80}
+   if(count<80){count=80}
+   count=(count+0.5)%cycle
   let size=count
   ellipse(width / 2, height / 2, size);
+ if(mouseIsPressed){count=(count+1)%cycle}
 }
